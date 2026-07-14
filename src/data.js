@@ -11,7 +11,7 @@ export const personal = {
   github: 'https://github.com/Manthan-Bhegade7781',
   linkedin: 'https://www.linkedin.com/in/manthanbhegade',
   location: 'Pune, Maharashtra, India',
-  resumeUrl: 'https://drive.google.com/file/d/1YATQk53VQoIxwfmevZ0F7KvXQ2UQpt0V/view?usp=sharing',
+  resumeUrl: 'https://drive.google.com/file/d/1oqDOjdaB1FGKFRN2zcF5PCNSfC__2NCy/view?usp=sharing',
 }
 
 // ─── Stats ────────────────────────────────────────────────────────────────────
@@ -62,7 +62,7 @@ export const skillCategories = [
     tags: [
     'Git', 'GitHub', 'VS Code',
     'Postman', 'Jira',
-    'Vercel', 'GitHub Pages'
+    'Vercel', 'GitHub Pages','Google OAuth','MongoDB Atlas'
     ],
   }
 ]
@@ -70,6 +70,28 @@ export const skillCategories = [
 
 // ─── Projects ─────────────────────────────────────────────────────────────────
 export const projects = [
+{
+  title: 'PrepPilot AI',
+  description:
+    'An end-to-end AI career assistant that uses Gemini AI to analyze resumes, calculate ATS match scores, generate interview questions, detect skill gaps, build personalized learning roadmaps, and create ATS-friendly resumes.',
+  emoji: '🤖',
+  color: 'rgba(20,184,166,.1)',
+  stack: [
+    'React',
+    'Tailwind CSS',
+    'Node.js',
+    'Express.js',
+    'MongoDB',
+    'JWT',
+    'Google OAuth',
+    'Gemini AI',
+    'Puppeteer',
+    'Multer'
+  ],
+  liveUrl: 'https://preppilot-ai-mb.vercel.app',
+  githubUrl: 'https://github.com/Manthan-Bhegade7781/PrepPilot-AI',
+  featured: true,
+},
 {
 title: 'MERN Blog Platform',
 description:
@@ -171,36 +193,42 @@ name: 'Agile with Atlassian Jira',
 issuer: 'Atlassian',
 year: '2024',
 icon: '📋',
+href:"https://drive.google.com/file/d/1FwFn1dKCV77mlG1m6DlLPfkraR6rdsUy/view?usp=sharing"
 },
 {
-name: 'Django Web Framework',
+name: 'Programming for Everybody (Getting Started with Python)',
 issuer: 'Coursera',
 year: '2024',
 icon: '🌐',
+href:"https://drive.google.com/file/d/1PHFqiJMJTNitmhTI0Jbg18MMl5zZmTa4/view?usp=sharing"
 },
 {
 name: 'Blockchain Specialization',
 issuer: 'University at Buffalo',
 year: '2025',
 icon: '⛓️',
+href:"https://drive.google.com/file/d/1dAyEd0R64Iurv0kROcNPtjmBDug8KRcM/view?usp=sharing"
 },
 {
 name: 'IBM Machine Learning',
 issuer: 'Coursera',
 year: '2025',
 icon: '🤖',
+href:"https://drive.google.com/file/d/1GBbvgYSSQtlD7DZN7BzzUMbep8j6xL4d/view?usp=sharings"
 },
 {
 name: 'Introduction to Software Testing',
 issuer: 'University of Minnesota',
 year: '2025',
 icon: '🧪',
+href:"https://drive.google.com/file/d/1QPrOGrWg8d0yWoTIMwu3Lan-OabaCCyg/view?usp=sharing"
 },
 {
 name: 'Operating System Fundamentals',
 issuer: 'NPTEL',
 year: '2024',
 icon: '💻',
+href:"https://drive.google.com/file/d/1Egc7IZoO734MkPmadMI0dzFNHxPrtoHW/view?usp=sharing"
 },
 ]
 

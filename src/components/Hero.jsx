@@ -235,7 +235,7 @@ export default function Hero() {
                 style={{ border: '4px solid #0a0a0f' }}
               >
                <img                              
-                  src="\photos\WhatsApp Image 2026-06-27 at 2.11.41 PM.jpeg"                              
+                  src="\photos\Manthan.dev.png"                              
                   alt="Manthan Bhegade"                           
                   className="w-full h-full object-cover"         
                  />

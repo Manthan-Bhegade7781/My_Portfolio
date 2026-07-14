@@ -37,37 +37,19 @@ function ProjectCard({ project, delay }) {
           {emoji}
         </div>
 
-        <div className="flex flex-col items-end gap-2">
+        <div className="flex flex-col items-end">
           {featured && (
-            <span className="text-[10px] font-semibold px-2.5 py-1 rounded-md tracking-wide"
-              style={{ background: 'rgba(110,231,183,.1)', border: '1px solid rgba(110,231,183,.3)', color: '#6ee7b7' }}>
+            <span
+              className="text-[10px] font-semibold px-2.5 py-1 rounded-md tracking-wide"
+              style={{
+                background: 'rgba(110,231,183,.1)',
+                border: '1px solid rgba(110,231,183,.3)',
+                color: '#6ee7b7',
+              }}
+            >
               Featured
             </span>
           )}
-          <div className="flex gap-3">
-            {liveUrl !== '#' && (
-              <a
-                href={liveUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="text-muted hover:text-accent-2 transition-colors"
-                title="Live demo"
-              >
-                <ExternalLinkIcon />
-              </a>
-            )}
-            {githubUrl !== '#' && (
-              <a
-                href={githubUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="text-muted hover:text-accent-2 transition-colors"
-                title="Source code"
-              >
-                <GithubIcon />
-              </a>
-            )}
-          </div>
         </div>
       </div>
 
@@ -91,6 +73,65 @@ function ProjectCard({ project, delay }) {
             {s}
           </span>
         ))}
+      </div>
+
+      {/* Action Buttons */}
+      <div className="flex gap-3 pt-4 mt-auto">
+        {githubUrl !== "#" && (
+          <a
+            href={githubUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="
+              flex-1
+              inline-flex
+              items-center
+              justify-center
+              gap-2
+              rounded-xl
+              border
+              border-border
+              bg-bg
+              py-3
+              text-sm
+              font-medium
+              text-white
+              transition-all
+              duration-300
+              hover:border-accent
+              hover:text-accent
+              hover:-translate-y-0.5
+            "
+          >
+            <GithubIcon />
+            <span>GitHub</span>
+          </a>
+        )}
+
+        {liveUrl !== "#" && (
+          <a
+            href={liveUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="
+              flex-1
+              inline-flex
+              items-center
+              justify-center
+              gap-2
+              font-semibold
+              text-white
+              duration-300
+              hover:scale-[1.02]
+              hover:shadow-lg
+              hover:shadow-accent/30
+              bg-accent py-3 rounded-xl transition-all text-sm
+            "
+          >
+            <ExternalLinkIcon />
+            <span>Live Demo</span>
+          </a>
+        )}
       </div>
     </div>
   )
